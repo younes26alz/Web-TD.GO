@@ -1,0 +1,16 @@
+/* ================================================================
+   TD.Go — Animation & Entrance Effects (AOS-like, vanilla JS)
+================================================================ */
+
+/* Initial hidden state for animated elements */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-aos="fade-right"] { transform: translateX(-50px); }
+[data-aos="fade-left"]  { transform: translateX(50px); }
+[data-aos].visible {
+  opacity: 1;
+  transform: translate(0);
+}
